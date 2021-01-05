@@ -1,0 +1,377 @@
+/*===================================================================
+			            Google Fonts Style
+======================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+
+/*===================================================================
+			            Table Style
+======================================================================*/
+
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Project:            SixtyNine Template HTML;
+Version:            1.0
+Last change:        01/05/2021
+Author:             Md. Masuder Rahman Masud
+Author url:         https://rachoudhury.com/codermasud/;
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+defults style :- body,span,paragraph,headline, section
+
+1. Header
+2. About
+3. Work
+4. Gellary
+5. Review-slider
+6. Contact
+7. Footer
+-------------------------------------------------------------------*/
+
+/*===================================================================
+			            Defult Style
+======================================================================*/
+h1,h2,h3,h4,h5,h6{font-family: 'Playfair Display', serif; color: #231f20;}
+p,span,a{font-family: 'Source Sans Pro', sans-serif;}
+body{overflow-x: hidden;}
+/*===================================================================
+			            Common Style
+======================================================================*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+section{
+    padding: 100px 0;
+}
+a:hover{
+    text-decoration: none;
+}
+.common-btn{
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background: #593bff;
+    border: 1px solid #593bff;
+    transition: 1s;
+}
+.common-btn:hover{
+    color: #593bff;
+    background: transparent;
+    border: 1px solid #593bff;
+    transition: 1s;
+}
+/*===========================================================
+		                     Header Style 
+=============================================================*/
+.header{
+    min-height: 500px;
+    background: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* menu start  */
+.menu{
+    padding-top: 30px;
+    z-index: 999 !important;
+}
+.is-sticky .menu{
+	z-index: 999 !important;
+	background: #5538f2;
+	transition: .5s;
+    padding: 5px 0px;
+}
+/* side-nav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.fa-bars{
+    color: #f1f1f1;
+}
+/* start main header  */
+.main-header {
+   padding: 210px 0;
+   text-align: center;
+    margin: 0px auto;
+}
+.main-header h1{
+    color: #fff;
+    font-size: 74px;
+    font-weight: 700px;
+    width: 90%;
+    padding-bottom: 35px;
+    margin: 0px auto;
+}
+.main-header h1 span{
+    font-style: italic;
+}
+/*=================================================================
+		                     About Style 
+===================================================================*/
+.about{
+    min-height: 500PX;
+}
+.about-left span{
+    color: #593bff;
+    font-style: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.about-left h2{
+    font-size: 26px;
+    font-weight: 700;
+    width: 88%;
+    padding: 30px 0;
+}
+.about-left p{
+    color: #b7b7b7;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+#uncommon-p{
+    padding-bottom: 80px;
+}
+.single-about {
+    padding: 35px;
+    border-bottom: 3px solid #5538f3;
+    -webkit-box-shadow: 1px 2px 23px -8px rgba(0,0,0,0.69); 
+    box-shadow: 1px 2px 23px -8px rgba(0,0,0,0.69);
+    transition: 1s;
+    margin-bottom: 20px;
+}
+.single-about:hover{
+    transition: 1s;
+    -webkit-box-shadow: inset 1px 2px 23px -8px rgba(0,0,0,0.69); 
+    box-shadow: inset 1px 2px 23px -8px rgba(0,0,0,0.69);
+}
+.single-about h2{
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: capitalize; 
+}
+.single-about p{
+    color: #b0b0b0;
+    font-size: 15px;
+    padding: 20px 0 30px 0;
+}
+.single-about a{
+    color: #5538f3;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+/*=================================================================
+		                     work Style 
+===================================================================*/
+.work{
+    min-height: 200px;
+    text-align: center;
+    margin: 0px auto;
+    -webkit-box-shadow: inset 1px 2px 20px -8px rgba(0,0,0,0.29); 
+    box-shadow: inset 1px 2px 20px -8px rgba(0,0,0,0.29);
+}
+.work span{
+    color: #593bff;
+    font-size: 16px;
+}
+.work h2{
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+/*=================================================================
+		                     Gellary Style 
+===================================================================*/
+.gellary{
+    min-height: 550px;
+    background: #231f20;
+}
+.gel-img img{
+    width: 100%;
+}
+.single-gel {
+    margin: 0px 0px 35px 0px;
+}
+.hover{
+    position: relative;
+    cursor: pointer;
+}
+.hover:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #593bff;
+    content: "";
+    border-radius: 5px;
+    visibility: hidden;
+    transition: 1s;
+}
+.gel-text{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    visibility: hidden;
+    transition: .3s;
+}
+.hover:hover .gel-text{
+    visibility: visible;
+    transition: .3s;
+}
+.hover:hover::before{
+    visibility: visible;
+    transition: 1s;
+    height: 100%;
+}
+.gel-text h2{
+    color: white;
+    font-size: 44px;
+    text-align: center;
+}
+.gel-text span{
+    color: white;
+    font-size: 14px; 
+    text-align: center;
+}
+/*=================================================================
+		                     Review-slider Style 
+===================================================================*/
+.review-slider{
+    background: url(../images/slider-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+.slider-item{
+    margin: 0px auto;
+    text-align: center;
+}
+.slider-item p{
+    color: #fff;
+    font-size: 22px;
+    width: 80%;
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    position: relative;
+}
+.fa-quote-left{
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -18px;
+    font-size: 20px;
+}
+.fa-quote-right{
+    position: absolute;
+    content: "";
+    bottom: 35px;
+    right: 125px;
+    font-size: 20px;
+}
+button.owl-prev {
+    outline: none;
+}
+button.owl-next {
+    outline: none;
+}
+.slider-item h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*=================================================================
+		                     contact Style 
+===================================================================*/
+.contact{
+    min-height: 400px;
+    margin: 0px auto;
+    text-align: center;
+}
+.contact span{
+    color: #593bff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.contact h2{
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 20px 0 50px 0;
+}
+/*=================================================================
+		                     Footer Style 
+===================================================================*/
+.footer{
+    min-height: 300px;
+    background: #231f20;
+    padding: 100px 0;
+}
+.footer-wrap{
+    margin: 0px auto;
+    text-align: center;
+}
+.footer-wrap ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 0 15px;
+}
+.footer-wrap ul li a {
+    color: #fff;
+    font-size: 25px;
+    background: #1c191a;
+    padding: 19px;
+    border-radius: 54%;
+}
+.footer-wrap ul li a:hover {
+    color: #5638f2;
+}
+.fa-facebook-f, .fa-linkedin-in{
+    padding: 9px;
+}
+.fa-linkedin-in{
+    padding: 8px;
+}
+.footer-wrap p{
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 40px 0 0 0;
+}
+/*============================== END =====================================*/
